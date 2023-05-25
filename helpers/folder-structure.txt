@@ -1,0 +1,12 @@
+- src
+	- assets(audio, img)
+	- custom hooks
+	- styles(за mixin-и примерно)
+	- utils
+	- pages
+		- login
+			login.jsx
+			login.scss
+			- components
+				form.jsx
+				form.scss

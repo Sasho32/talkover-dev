@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Main page</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+        />
+        <!-- <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        /> -->
+        <script
+            src="https://kit.fontawesome.com/927c2b99dd.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./index.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <h2>Talk<span class="danger">Over</span></h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                home
+                            </span></span
+                        >
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                newspaper
+                            </span></span
+                        >
+                        <span class="title">My posts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                favorite
+                            </span></span
+                        >
+                        <span class="title">Liked</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                chat
+                            </span></span
+                        >
+                        <span class="title">Comments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                account_circle
+                            </span></span
+                        >
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                group
+                            </span></span
+                        >
+                        <span class="title">Community</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                logout
+                            </span></span
+                        >
+                        <span class="title">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <header>
+                <i class="fa-solid fa-bars"></i>
+                <div id="personal-info">
+                    <div id="greeting">
+                        <p>Hey, <span>Walter</span>!</p>
+                        <span class="role">Admin</span>
+                    </div>
+                    <img src="./profile.jfif" alt="profile" />
+                </div>
+            </header>
+            <section class="filters">
+                <section class="categories">
+                    <h2>CATEGORIES</h2>
+                    <div id="categories">
+                        <div class="category">
+                            <span class="title"> All(12) </span>
+                            <i class="fa-solid fa-list-ul"></i>
+                        </div>
+                        <div class="category">
+                            <span class="title"> Politics(12) </span>
+                            <i class="fa-solid fa-landmark"></i>
+                        </div>
+                        <div class="category">
+                            <span class="title"> Sports(12) </span>
+                            <i class="fa-solid fa-volleyball"></i>
+                        </div>
+                        <div class="category">
+                            <span class="title"> Life(12) </span>
+                            <i class="fa-regular fa-hand"></i>
+                        </div>
+                        <div class="category">
+                            <span class="title"> Music(12) </span>
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <div class="category">
+                            <span class="title"> Movies(12) </span>
+                            <i class="fa-solid fa-clapperboard"></i>
+                        </div>
+                    </div>
+                    <div id="switchers">
+                        <!-- <div class="switch">
+                            <input type="radio" name="kzl" id="" />Recently
+                            published
+                        </div>
+                        <div class="switch">
+                            <input type="radio" name="kzl" id="" />
+                            Recently commented
+                        </div> -->
+                        <label class="form-switch">
+                            <input type="radio" name="filter" />
+                            <i></i>
+                            Recently published
+                        </label>
+                        <label class="form-switch">
+                            <input type="radio" name="filter" />
+                            <i></i>
+                            Recently commented
+                        </label>
+                    </div>
+                </section>
+                <section class="modes">
+                    <h2>MODES</h2>
+                    <div id="modes">
+                        <div class="mode">
+                            <span>Posts</span>
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+                        <div class="mode">
+                            <span>Polls</span>
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div>
+                    </div>
+                    <button id="add">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Add a post!</span>
+                    </button>
+                </section>
+            </section>
+
+            <section class="content">
+                <h2>BLOGS</h2>
+                <section class="blogs">
+                    <article class="blog">
+                        <div class="author-info">
+                            <img src="./profile.jfif" alt="profile" />
+                        </div>
+                        <!-- <img src="./profile.jfif" alt="blog-img" /> -->
+                        <div class="image"></div>
+                        <div class="stats">
+                            <div class="interactions">
+                                <div class="interaction">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <span>183</span>
+                                </div>
+
+                                <div class="interaction">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <span>183</span>
+                                </div>
+                            </div>
+                            <div class="timestamp">
+                                <span class="date">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <h3>HEADING</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Accusamus minus consequuntur
+                                recusandae sit molestiae illo reprehenderit
+                                quasi quo nihil veritatis maiores, officia
+                                repudiandae, cupiditate provident, esse in
+                                ducimus fugiat quia?
+                            </p>
+                        </div>
+                        <button>Continue reading...</button>
+                    </article>
+                    <article class="blog">
+                        <div class="author-info">
+                            <img src="./profile.jfif" alt="profile" />
+                        </div>
+                        <!-- <img src="./profile.jfif" alt="blog-img" /> -->
+                        <div class="image"></div>
+                        <div class="stats">
+                            <div class="interactions">
+                                <div class="interaction">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <span>183</span>
+                                </div>
+
+                                <div class="interaction">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <span>183</span>
+                                </div>
+                            </div>
+                            <div class="timestamp">
+                                <span class="date">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <h3>HEADING</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Accusamus minus consequuntur
+                                recusandae sit molestiae illo reprehenderit
+                                quasi quo nihil veritatis maiores, officia
+                                repudiandae, cupiditate provident, esse in
+                                ducimus fugiat quia?
+                            </p>
+                        </div>
+                        <button>Continue reading...</button>
+                    </article>
+                    <article class="blog">
+                        <div class="author-info">
+                            <img src="./profile.jfif" alt="profile" />
+                        </div>
+                        <!-- <img src="./profile.jfif" alt="blog-img" /> -->
+                        <div class="image"></div>
+                        <div class="stats">
+                            <div class="interactions">
+                                <div class="interaction">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <span>183</span>
+                                </div>
+
+                                <div class="interaction">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <span>183</span>
+                                </div>
+                            </div>
+                            <div class="timestamp">
+                                <span class="date">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <h3>HEADING</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Accusamus minus consequuntur
+                                recusandae sit molestiae illo reprehenderit
+                                quasi quo nihil veritatis maiores, officia
+                                repudiandae, cupiditate provident, esse in
+                                ducimus fugiat quia?
+                            </p>
+                        </div>
+                        <button>Continue reading...</button>
+                    </article>
+                    <article class="blog">
+                        <div class="author-info">
+                            <img src="./profile.jfif" alt="profile" />
+                        </div>
+                        <!-- <img src="./profile.jfif" alt="blog-img" /> -->
+                        <div class="image"></div>
+                        <div class="stats">
+                            <div class="interactions">
+                                <div class="interaction">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <span>183</span>
+                                </div>
+
+                                <div class="interaction">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <span>183</span>
+                                </div>
+                            </div>
+                            <div class="timestamp">
+                                <span class="date">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <h3>HEADING</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Accusamus minus consequuntur
+                                recusandae sit molestiae illo reprehenderit
+                                quasi quo nihil veritatis maiores, officia
+                                repudiandae, cupiditate provident, esse in
+                                ducimus fugiat quia?
+                            </p>
+                        </div>
+                        <button>Continue reading...</button>
+                    </article>
+                    <article class="blog">
+                        <div class="author-info">
+                            <img src="./profile.jfif" alt="profile" />
+                        </div>
+                        <!-- <img src="./profile.jfif" alt="blog-img" /> -->
+                        <div class="image"></div>
+                        <div class="stats">
+                            <div class="interactions">
+                                <div class="interaction">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <span>183</span>
+                                </div>
+
+                                <div class="interaction">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <span>183</span>
+                                </div>
+                            </div>
+                            <div class="timestamp">
+                                <span class="date">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <h3>HEADING</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Accusamus minus consequuntur
+                                recusandae sit molestiae illo reprehenderit
+                                quasi quo nihil veritatis maiores, officia
+                                repudiandae, cupiditate provident, esse in
+                                ducimus fugiat quia?
+                            </p>
+                        </div>
+                        <button>Continue reading...</button>
+                    </article>
+                    <article class="blog">
+                        <div class="author-info">
+                            <img src="./profile.jfif" alt="profile" />
+                        </div>
+                        <!-- <img src="./profile.jfif" alt="blog-img" /> -->
+                        <div class="image"></div>
+                        <div class="stats">
+                            <div class="interactions">
+                                <div class="interaction">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <span>183</span>
+                                </div>
+                                <div class="interaction">
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    <span>183</span>
+                                </div>
+
+                                <div class="interaction">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <span>183</span>
+                                </div>
+                            </div>
+                            <div class="timestamp">
+                                <span class="date">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <h3>HEADING</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Accusamus minus consequuntur
+                                recusandae sit molestiae illo reprehenderit
+                                quasi quo nihil veritatis maiores, officia
+                                repudiandae, cupiditate provident, esse in
+                                ducimus fugiat quia?
+                            </p>
+                        </div>
+                        <button>Continue reading...</button>
+                    </article>
+                </section>
+            </section>
+
+            <div class="page-arrows">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+                <span>5</span>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </div>
+        </main>
+    </body>
+</html>

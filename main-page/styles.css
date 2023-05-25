@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gotin);
+}
+
+nav h2 {
+    text-align: right;
+    padding-right: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 2.3em;
+    padding-left: 5px;
+    color: var(--white);
+    margin-bottom: 5%;
+}
+nav h2 span.danger {
+    color: hsl(60, 100%, 45%);
+}
+
+/* --------------------------------------------------------------> */
+
+:root {
+    --blue: rgb(40, 123, 255);
+    --white: #fff;
+    --grey: #f5f5f5;
+    --black1: #222;
+    --gotin: hsl(0, 0%, 90%);
+
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark: #677483;
+    --color-background: #f6f6f9;
+
+    --box-shadow: 0 2rem 3rem var(var(--color-light));
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* .container {
+    position: relative;
+    background-color: red;
+    width: 100%;
+} */
+
+nav > i::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    transform: translateX(100%);
+    display: none;
+}
+
+nav {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+
+    background: radial-gradient(
+        circle at 74.2% 50.9%,
+        rgb(14, 72, 222) 5.2%,
+        rgb(3, 22, 65) 75.3%
+    );
+
+    transition: 0.5s;
+}
+
+nav ul {
+    top: 0;
+    left: 0;
+}
+
+nav ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-weight: bold;
+}
+
+nav ul li.active {
+    background-color: var(--color-background);
+}
+
+nav ul li:last-child {
+    position: absolute;
+    bottom: 3%;
+    pointer-events: none;
+}
+
+nav ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav ul li.active a {
+    color: var(--black1);
+}
+
+nav ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+nav ul li a .icon span {
+    font-style: 1.75em;
+}
+nav ul li a .title {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+@media (min-width: 600px) {
+    nav ul li.active a::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -50px;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: 35px 35px 0 10px var(--color-background);
+        pointer-events: none;
+    }
+
+    nav ul li.active a::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -50px;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: 35px -35px 0 10px var(--color-background);
+        pointer-events: none;
+    }
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 600px) {
+    nav {
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+
+    nav.active {
+        left: 0;
+    }
+
+    nav i::before {
+        display: inline;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+main {
+    background-color: var(--color-background);
+    min-height: 100vh;
+    width: calc(100vw - 300px);
+    margin-left: 300px;
+    /* s procenti ne stava -> nz shto, bodyto e 100vh */
+}
+
+main > #categories {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: blueviolet; */
+    gap: 30px;
+    /* justify-content: space-between; */
+    /* padding-inline-start: 2%; */
+    /* padding-inline-end: 40%; */
+    padding-inline: 15%;
+}
+
+main > #categories > .category {
+    flex-basis: 200px;
+    /* max-width: 300px; */
+    cursor: pointer;
+    /* height: 60px; */
+    padding-block: 30px;
+    flex-grow: 1;
+    background-color: var(--white);
+    /* padding: 10px 30px; */
+    border-radius: 25px;
+    /* -webkit-box-shadow: 7px 7px 12px 2px rgba(0, 0, 0, 0.75); */
+    /* -moz-box-shadow: 7px 7px 12px 2px rgba(0, 0, 0, 0.75); */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+/* main > #categories > .category:nth-child(1) {
+    background-color: #eef5db;
+}
+main > #categories > .category:nth-child(2) {
+    background-color: #c7efcf;
+}
+main > #categories > .category:nth-child(3) {
+    background-color: #fe5f55;
+}
+main > #categories > .category:nth-child(4) {
+    background-color: #fe5f55;
+}
+main > #categories > .category:nth-child(5) {
+    background-color: #eef5db;
+}
+main > #categories > .category:nth-child(6) {
+    background-color: #eef5db;
+} */
+
+main > #categories > .category.active {
+    background: radial-gradient(
+        circle at 74.2% 50.9%,
+        rgb(14, 72, 222) 5.2%,
+        rgb(3, 22, 65) 75.3%
+    );
+    color: var(--color-background);
+}
+main > #categories > .category.active > i {
+    background: var(--color-background);
+    color: rgb(14, 72, 222);
+}
+
+main > #categories > .category > i {
+    color: var(--color-background);
+    background: radial-gradient(
+        circle at 74.2% 50.9%,
+        rgb(14, 72, 222) 5.2%,
+        rgb(3, 22, 65) 75.3%
+    );
+    padding: 5px;
+    border-radius: 50%;
+    scale: 1.7;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    main > #categories {
+        padding-inline: 5%;
+    }
+}

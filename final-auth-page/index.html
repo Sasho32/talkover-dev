@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Auth page</title>
+        <script
+            src="https://kit.fontawesome.com/64d58efce2.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- за иконките на формите -->
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./index.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="left-upper-banner banner">
+                <!-- <img src="./logo.png" alt="logo" /> -->
+                <div class="logo">
+                    <div class="heading">
+                        <h1>Talk<span>Over</span></h1>
+                        <span id="s"></span>
+                        <span id="m"></span>
+                        <span id="l"></span>
+                    </div>
+                    <h2>Express yourself!</h2>
+                </div>
+                <div class="content">
+                    <h2>New here?</h2>
+                    <button id="sign-up-btn">Sign up!</button>
+                </div>
+            </div>
+            <div class="right-lower-banner banner">
+                <!-- <img src="./logo.png" alt="logo" /> -->
+                <div class="logo">
+                    <div class="heading">
+                        <h1>Talk<span>Over</span></h1>
+                        <span id="s"></span>
+                        <span id="m"></span>
+                        <span id="l"></span>
+                    </div>
+                    <h2>Express yourself!</h2>
+                </div>
+                <div class="content">
+                    <h2>Already one of us?</h2>
+                    <button id="sign-in-btn">Sign in!</button>
+                </div>
+            </div>
+            <div class="forms-container">
+                <form id="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" />
+                    </div>
+
+                    <input type="submit" value="Login" class="btn solid" />
+                </form>
+                <form id="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" />
+                    </div>
+
+                    <input type="submit" value="Sign up" class="btn solid" />
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

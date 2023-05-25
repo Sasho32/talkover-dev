@@ -1,0 +1,34 @@
+Guest:
+
+- /login
+- /signup
+
+Regular user:
+- /home/posts
+- /home/pools
+- /my-profile/edit
+- /{someOtherUsername}
+- /my-posts
+- /liked-posts
+- /my-comments
+- /community
+
+Moderator:
+- /home/posts
+- /home/posts/my-posts
+- /home/posts/{singlePost}/
+- /home/posts/{singlePost}/edit
+- /createPost
+- /home/pools
+- /home/pools/{singlePool}
+- /createPool
+- /my-profile/edit
+- /{someOtherUsername}
+- /liked-posts
+- /my-comments
+- /community
+- /pending-posts
+
+
+404
+
