@@ -16,3 +16,19 @@ menuBar.addEventListener('click', () => {
 });
 
 // ---------------------------------------------------------->
+
+const as = document.querySelectorAll('a');
+
+as.forEach(a => a.addEventListener('click', e => e.preventDefault()));
+// ---------------------------------------------------------->
+const eyeBtn = document.querySelector('div.interaction:nth-child(1)');
+const commentBtn = document.querySelector('div.interaction:nth-child(4)');
+
+const article = document.querySelector('article#post');
+
+eyeBtn.addEventListener('click', () =>
+    article.classList.remove('comments-mode')
+);
+commentBtn.addEventListener('click', () =>
+    article.classList.add('comments-mode')
+);
