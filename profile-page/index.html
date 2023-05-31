@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Main page</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+        />
+        <!-- <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        /> -->
+        <script
+            src="https://kit.fontawesome.com/927c2b99dd.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./index.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <h2>Talk<span class="danger">Over</span></h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                home
+                            </span></span
+                        >
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                newspaper
+                            </span></span
+                        >
+                        <span class="title">My posts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                favorite
+                            </span></span
+                        >
+                        <span class="title">Liked</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                chat
+                            </span></span
+                        >
+                        <span class="title">Comments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                account_circle
+                            </span></span
+                        >
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                group
+                            </span></span
+                        >
+                        <span class="title">Community</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                logout
+                            </span></span
+                        >
+                        <span class="title">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <header>
+                <i class="fa-solid fa-bars"></i>
+                <div id="personal-info">
+                    <div id="greeting">
+                        <p>Hey, <span>Walter</span>!</p>
+                        <span class="role">Admin</span>
+                    </div>
+                    <div class="profile-pic-cutter">
+                        <img src="./profile.jfif" alt="profile" />
+                    </div>
+                </div>
+            </header>
+
+            <section>
+                <section id="options">
+                    <!-- <div id="admin">
+                        <i class="fa-solid fa-user"></i>
+                        <i class="blue fa-solid fa-user-gear"></i>
+                    </div> -->
+                    <!-- <div id="moderator">
+                        <i class="yellow fa-solid fa-triangle-exclamation"></i>
+                        <i class="green fa-solid fa-user-check"></i>
+                        <i class="fa-solid fa-user-slash"></i>
+                    </div> -->
+                    <!-- moje i bez da e div shtoto ima samo text align right -->
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="green fa-solid fa-circle-check"></i>
+                    <i class="red fa-solid fa-circle-xmark"></i>
+                </section>
+                <section id="info">
+                    <section id="left">
+                        <div id="background">
+                            <div class="profile-pic-cutter">
+                                <img src="./profile.jfif" alt="profile-pic" />
+                            </div>
+                        </div>
+                        <button>Update profile picture</button>
+                        <input type="text" value="Walter White" />
+                        <span>Walter White</span>
+                        <div id="role">
+                            <i class="fa-solid fa-user-shield"></i>
+                            <span>Administrator</span>
+                        </div>
+                    </section>
+                    <section id="right">
+                        <section id="stats">
+                            <div class="stat">
+                                <span>Posts</span>
+                                <span>23</span>
+                            </div>
+                            <div class="stat">
+                                <span>Comments</span>
+                                <span>23</span>
+                            </div>
+                            <div class="stat">
+                                <span>Received likes</span>
+                                <span>23</span>
+                            </div>
+                            <div class="stat bio">
+                                <span>Bio</span>
+                                <span
+                                    >Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Magnam voluptatem amet
+                                    omnis, ex quo maxime quaerat, repellendus
+                                    impedit cum optio quibusdam nostrum
+                                    blanditiis ab esse, est dolorum quisquam
+                                    ipsa id?</span
+                                >
+
+                                <textarea>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim amet a assumenda, dolorum optio nulla impedit ratione facilis doloremque aliquid, itaque eum, minima illo dolores vero natus sit accusamus repudiandae?</textarea
+                                >
+                            </div>
+                            <div class="stat">
+                                <span>Registered</span>
+                                <span>23.01.2023</span>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

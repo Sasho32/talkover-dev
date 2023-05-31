@@ -29,11 +29,6 @@ div.author-info > h2[data-title]:hover::after {
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--gotin);
-}
-
 nav h2 {
     text-align: right;
     padding-right: 10px;
@@ -45,6 +40,8 @@ nav h2 {
 }
 nav h2 span.danger {
     color: hsl(60, 100%, 45%);
+    /* color: hsla(208, 33%, 21%, 1); */
+    /* color: hsla(211, 36%, 46%, 1); */
 }
 
 /* --------------------------------------------------------------> */
@@ -70,8 +67,20 @@ nav h2 span.danger {
 
     --profile-pic-size: 40px;
 
-    --heading-bg: hsl(193, 100%, 35%);
-    --article-bg: hsl(193, 100%, 20%);
+    /* --heading-bg: hsl(350, 87%, 44%); */
+    --heading-bg: hsl(116, 82%, 19%);
+    --heading-bg: #043565;
+    --article-bg: hsl(34, 78%, 80%);
+    --comments-secondary-bg: hsl(348, 83%, 40%);
+
+    /* --font-family: Georgia, 'Times New Roman', Times, serif; */
+    --font-family: 'Montserrat', sans-serif;
+}
+body {
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: var(--font-family);
+    background-color: var(--gotin);
 }
 
 body {
@@ -107,7 +116,26 @@ nav {
         rgb(14, 72, 222) 5.2%,
         rgb(3, 22, 65) 75.3%
     );
+    /* background: #051e34; */
+    /* background: #8a9bb2; */
 
+    background: linear-gradient(
+        90deg,
+        hsla(208, 33%, 21%, 1) 0%,
+        hsla(211, 36%, 46%, 1) 100%
+    );
+
+    background: -moz-linear-gradient(
+        90deg,
+        hsla(208, 33%, 21%, 1) 0%,
+        hsla(211, 36%, 46%, 1) 100%
+    );
+
+    background: -webkit-linear-gradient(
+        90deg,
+        rgb(18, 36, 52) 0%,
+        rgb(4, 37, 72) 100%
+    );
     transition: 0.5s;
 }
 
@@ -120,13 +148,18 @@ nav ul li {
     position: relative;
     width: 100%;
     list-style: none;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    font-weight: bold;
+    /* border-top-left-radius: 30px; */
+    /* border-bottom-left-radius: 30px; */
+}
+
+@media (pointer: fine) {
+    nav ul li:hover {
+        background-color: rgba(20, 56, 60, 0.5);
+    }
 }
 
 nav ul li.active {
-    background-color: var(--gotin);
+    /* background-color: var(--gotin); */
 }
 
 nav ul li:last-child {
@@ -136,16 +169,17 @@ nav ul li:last-child {
 }
 
 nav ul li a {
+    color: var(--white);
     position: relative;
     display: block;
     width: 100%;
     display: flex;
     text-decoration: none;
-    color: var(--white);
 }
 
 nav ul li.active a {
-    color: var(--black1);
+    font-weight: bold;
+    color: rgb(102, 157, 246);
 }
 
 nav ul li a .icon {
@@ -226,6 +260,7 @@ nav ul li a .title {
 main {
     /* background-color: var(--color-background); */
     /* background-color: hsl(42, 85%, 93%); */
+    --font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     width: calc(100vw - 250px);
     margin-left: 250px;
@@ -280,17 +315,52 @@ header > i {
         overflow: scroll;
     }
 }
+/* --------------------------------------------------------------> */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.alert > h3 {
+    font-family: Quicksand;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
+}
+.alert {
+    width: 95%;
+    margin: 20px auto;
+    padding: clamp(10px, 5vw, 30px);
+    /* nz dali e 5vw ok brat */
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px #ccc;
+    background-color: #f7a5a1;
+    border-left: 5px solid #9e0800;
+    transition: all 800ms;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+.close {
+    position: absolute;
+    font-size: 1.6rem;
+    color: #9e0800;
+    top: 0.4rem;
+    right: 0.4rem;
+}
+.close:hover {
+    cursor: pointer;
+}
 
 /* --------------------------------------------------------------> */
 
 article#post {
-    /* padding-inline: 4%; */
+    padding-inline: 4%;
     margin: auto;
-    width: 90%;
-    background-color: var(--article-bg);
-    border-radius: 25px;
+    /* width: 90%; */
+    /* background-color: var(--article-bg); */
+    /* border-radius: 25px; */
 
-    color: #fff;
+    /* color: #fff; */
 
     /* --profile-pic-size: 40px; */
 
@@ -298,6 +368,10 @@ article#post {
 }
 
 section#content {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: var(--article-bg);
+
     /* padding-bottom: 10px; */
     /* background-color: red; */
     /* height: 300px; */
@@ -316,7 +390,7 @@ section#content {
     /* scale: 0.9; */
     /* opacity: 0.8; */
     transition: all 0.2s;
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 section#content:hover {
     /* scale: 1; */
@@ -373,7 +447,7 @@ div.options {
     font-size: 1.5rem;
     margin-right: 0.5rem;
     /* color: var(--article-bg); */
-    color: #fff;
+    /* color: #fff; */
 }
 section#content > img.image {
     width: 50%;
@@ -400,6 +474,16 @@ section#content > div.stats > div.interactions > div.interaction {
     gap: 3px;
 }
 
+section#content > div.stats > div.interactions > div.interaction:hover {
+    cursor: pointer;
+}
+
+section#content > div.stats > div.interactions > div.interaction > i.clicked {
+    color: blue;
+    font-weight: bold;
+    /* taka pravi regulara -> bold nesh takova, smls zapylva go */
+}
+
 article#post div.interaction:hover {
     cursor: pointer;
 }
@@ -417,7 +501,7 @@ article#post.comments-mode div.interaction:nth-child(4) {
 section#content > div.main-content {
     /* min-height: 400px; */
     overflow: hidden;
-    background-color: var(--white);
+    /* background-color: var(--gotin); */
     /* border-radius: 10px; */
     color: #000;
 
@@ -436,7 +520,7 @@ section#content > div.main-content {
     извадих го над stat-овете
 } */
 main > h1 {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     /* margin-bottom: 10px; */
     /* margin-top: 30px; */
     text-align: center;
@@ -450,6 +534,7 @@ main > h1 {
     margin-block: 40px 20px;
     border-top-right-radius: 9999px;
     width: 96%;
+    /* padding-inline-end: 4%; */
     /* border-top-left-radius: 20px; */
 
     /* color: #fff; */
@@ -460,7 +545,7 @@ main > h1 {
 section#content > div.main-content > div.post > p {
     padding: 10px;
     overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     line-height: 2;
     font-size: 1.1rem;
 }
@@ -509,12 +594,12 @@ section#content > div.main-content > div.comments {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 section#content > div.main-content > div.comments > section#leave-a-reply {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.5rem;
 }
 section#content
     > div.main-content
@@ -533,7 +618,7 @@ section#content
     > section#leave-a-reply
     button {
     border: none;
-    background-color: var(--article-bg);
+    background-color: var(--comments-secondary-bg);
     color: #fff;
     width: 40%;
     max-width: 200px;
@@ -658,7 +743,9 @@ section#content
     /* border-bottom: 1px dashed black; */
     width: 100%;
     /* text-align: right; */
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    background-color: var(--article-bg);
+    /* background-color: var(--heading-bg); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -676,7 +763,7 @@ section#content
     > div.comment-heading
     > i {
     color: var(--white);
-    background-color: var(--article-bg);
+    background-color: var(--comments-secondary-bg);
     /* margin-right: 8px; */
     border-radius: 50%;
     padding: 5px;
@@ -720,8 +807,8 @@ section#content > div.stats {
 }
 @media (max-width: 800px) {
     article#post {
-        /* padding-inline: 2%; */
-        width: 100%;
+        padding: 0;
+        /* width: 100%; */
     }
     section#content > div.header,
     section#content > div.stats {
@@ -730,11 +817,15 @@ section#content > div.stats {
 
     main > h1 {
         width: 100%;
-        margin-block-end: 0;
+        /* margin-block-end: 0; */
+        margin-block: 0;
+        font-size: 1.4rem;
+        padding-block: 30px;
+        /* to e 2 */
     }
 
     main > h1,
-    article#post {
+    article#post > section#content {
         border-radius: 0;
     }
 

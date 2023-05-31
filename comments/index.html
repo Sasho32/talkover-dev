@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Main page</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+        />
+        <!-- <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        /> -->
+        <script
+            src="https://kit.fontawesome.com/927c2b99dd.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./index.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <h2>Talk<span class="danger">Over</span></h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                home
+                            </span></span
+                        >
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                newspaper
+                            </span></span
+                        >
+                        <span class="title">My posts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                favorite
+                            </span></span
+                        >
+                        <span class="title">Liked</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                chat
+                            </span></span
+                        >
+                        <span class="title">Comments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                account_circle
+                            </span></span
+                        >
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                group
+                            </span></span
+                        >
+                        <span class="title">Community</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"
+                            ><span class="material-symbols-outlined">
+                                logout
+                            </span></span
+                        >
+                        <span class="title">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <header>
+                <i class="fa-solid fa-bars"></i>
+                <div id="personal-info">
+                    <div id="greeting">
+                        <p>Hey, <span>Walter</span>!</p>
+                        <span class="role">Admin</span>
+                    </div>
+                    <div class="profile-pic-cutter">
+                        <img src="./profile.jfif" alt="profile" />
+                    </div>
+                </div>
+            </header>
+
+            <section id="comments">
+                <h2>28 May 2023</h2>
+                <article class="comment">
+                    <div class="profile-pic-cutter">
+                        <img src="./nature.jpg" alt="post-image" />
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span>Walter White</span> commented on
+                            <span>Jesse Pinkman</span>'s post:
+                        </span>
+                        <span class="comment"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatibus repellendus similique fuga libero
+                            velit, sapiente obcaecati odit officia, dolore
+                            facilis, fugit tempora ipsum corporis aut. Rem
+                            ipsum, asperiores reiciendis perspiciatis eum nemo
+                            molestiae atque voluptas saepe laboriosam, deleniti
+                            libero sequi fuga expedita nisi temporibus eligendi
+                            doloremque perferendis, harum cumque. Vel ipsam
+                            reprehenderit, ad in doloremque veritatis porro
+                            facilis molestiae fuga obcaecati illum nobis
+                            quisquam deleniti minus voluptatibus perspiciatis
+                            consequatur iusto quo exercitationem? Aperiam
+                            dolore, iusto corporis tempore quo, neque quaerat
+                            eos laboriosam architecto maiores numquam iure!
+                            Exercitationem odit vitae quaerat deserunt magni.
+                            Commodi obcaecati dicta facilis minus reprehenderit
+                            veritatis debitis!</span
+                        >
+                        <div class="category-time">
+                            <div class="category">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Sports</span>
+                            </div>
+                            <div class="time">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>23:56</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="comment">
+                    <div class="profile-pic-cutter">
+                        <img src="./images.jfif" alt="post-image" />
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span>Walter White</span> commented on
+                            <span>Jesse Pinkman</span>'s post:
+                        </span>
+                        <span class="comment"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatibus repellendus similique fuga libero
+                            velit, sapiente obcaecati odit officia, dolore
+                            facilis, fugit tempora ipsum corporis aut. Rem
+                            ipsum, asperiores reiciendis perspiciatis eum nemo
+                            molestiae atque voluptas saepe laboriosam, deleniti
+                            libero sequi fuga expedita nisi temporibus eligendi
+                            doloremque perferendis, harum cumque. Vel ipsam
+                            reprehenderit, ad in doloremque veritatis porro
+                            facilis molestiae fuga obcaecati illum nobis
+                            quisquam deleniti minus voluptatibus perspiciatis
+                            consequatur iusto quo exercitationem? Aperiam
+                            dolore, iusto corporis tempore quo, neque quaerat
+                            eos laboriosam architecto maiores numquam iure!
+                            Exercitationem odit vitae quaerat deserunt magni.
+                            Commodi obcaecati dicta facilis minus reprehenderit
+                            veritatis debitis!</span
+                        >
+                        <div class="category-time">
+                            <div class="category">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Sports</span>
+                            </div>
+                            <div class="time">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>23:56</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comment">
+                    <div class="profile-pic-cutter">
+                        <img src="./nature.jpg" alt="post-image" />
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span>Walter White</span> replied on
+                            <span>Jesse Pinkman</span>'s comment:
+                        </span>
+                        <span class="comment">L</span>
+                        <div class="category-time">
+                            <div class="category">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Sports</span>
+                            </div>
+                            <span class="time">23:56</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- <h2>26 May 2023</h2>
+                <article class="comment">
+                    <div class="profile-pic-cutter">
+                        <img src="./nature.jpg" alt="post-image" />
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span>Walter White</span> commented on
+                            <span>Jesse Pinkman</span>'s post:
+                        </span>
+                        <span class="comment"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Explicabo id perferendis, quam possimus
+                            nostrum repellendus? Reiciendis repellat earum
+                            impedit consequuntur!</span
+                        >
+                        <div class="category-time">
+                            <div class="category">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Sports</span>
+                            </div>
+                            <span class="time">23:56</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="comment">
+                    <div class="profile-pic-cutter">
+                        <img src="./nature.jpg" alt="post-image" />
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span>Walter White</span> replied on
+                            <span>Jesse Pinkman</span>'s comment:
+                        </span>
+                        <span class="comment"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Explicabo id perferendis, quam possimus
+                            nostrum repellendus? Reiciendis repellat earum
+                            impedit consequuntur!</span
+                        >
+                        <div class="category-time">
+                            <div class="category">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Sports</span>
+                            </div>
+                            <span class="time">23:56</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="comment">
+                    <div class="profile-pic-cutter">
+                        <img src="./nature.jpg" alt="post-image" />
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span>Walter White</span> commented on
+                            <span>Jesse Pinkman</span>'s post:
+                        </span>
+                        <span class="comment"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Explicabo id perferendis, quam possimus
+                            nostrum repellendus? Reiciendis repellat earum
+                            impedit consequuntur!</span
+                        >
+                        <div class="category-time">
+                            <div class="category">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Sports</span>
+                            </div>
+                            <span class="time">23:56</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="comment">
+                    <div class="profile-pic-cutter">
+                        <img src="./nature.jpg" alt="post-image" />
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span>Walter White</span> replied on
+                            <span>Jesse Pinkman</span>'s comment:
+                        </span>
+                        <span class="comment"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Explicabo id perferendis, quam possimus
+                            nostrum repellendus? Reiciendis repellat earum
+                            impedit consequuntur!</span
+                        >
+                        <div class="category-time">
+                            <div class="category">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Sports</span>
+                            </div>
+                            <span class="time">23:56</span>
+                        </div>
+                    </div>
+                </article>
+                <h2>20 May 2023</h2>
+                <article class="comment">
+                    <div class="profile-pic-cutter">
+                        <img src="./nature.jpg" alt="post-image" />
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span>Walter White</span> commented on
+                            <span>Jesse Pinkman</span>'s post:
+                        </span>
+                        <span class="comment"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Explicabo id perferendis, quam possimus
+                            nostrum repellendus? Reiciendis repellat earum
+                            impedit consequuntur!</span
+                        >
+                        <div class="category-time">
+                            <div class="category">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Sports</span>
+                            </div>
+                            <span class="time">23:56</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="comment">
+                    <div class="profile-pic-cutter">
+                        <img src="./nature.jpg" alt="post-image" />
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span>Walter White</span> replied on
+                            <span>Jesse Pinkman</span>'s comment:
+                        </span>
+                        <span class="comment"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Explicabo id perferendis, quam possimus
+                            nostrum repellendus? Reiciendis repellat earum
+                            impedit consequuntur!</span
+                        >
+                        <div class="category-time">
+                            <div class="category">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Sports</span>
+                            </div>
+                            <span class="time">23:56</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="comment">
+                    <div class="profile-pic-cutter">
+                        <img src="./nature.jpg" alt="post-image" />
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span>Walter White</span> commented on
+                            <span>Jesse Pinkman</span>'s post:
+                        </span>
+                        <span class="comment"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Explicabo id perferendis, quam possimus
+                            nostrum repellendus? Reiciendis repellat earum
+                            impedit consequuntur!</span
+                        >
+                        <div class="category-time">
+                            <div class="category">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Sports</span>
+                            </div>
+                            <span class="time">23:56</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="comment">
+                    <div class="profile-pic-cutter">
+                        <img src="./nature.jpg" alt="post-image" />
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span>Walter White</span> replied on
+                            <span>Jesse Pinkman</span>'s comment:
+                        </span>
+                        <span class="comment"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Explicabo id perferendis, quam possimus
+                            nostrum repellendus? Reiciendis repellat earum
+                            impedit consequuntur!</span
+                        >
+                        <div class="category-time">
+                            <div class="category">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Sports</span>
+                            </div>
+                            <span class="time">23:56</span>
+                        </div>
+                    </div>
+                </article> -->
+            </section>
+        </main>
+    </body>
+</html>
