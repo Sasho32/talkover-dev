@@ -55,7 +55,7 @@ modeOptions[1].addEventListener('click', e => {
 
 const ctxs = document.querySelectorAll('article.poll > canvas');
 
-ctxs.forEach(ctx => {
+const data = ctxs.forEach(ctx => {
     console.log(ctx);
     new Chart(ctx, {
         type: 'doughnut',
@@ -64,31 +64,45 @@ ctxs.forEach(ctx => {
             datasets: [
                 {
                     label: 'Number of votes',
-                    data: [
-                        Math.random() * (20 - 1) + 1,
-                        Math.random() * (20 - 1) + 1,
-                        Math.random() * (20 - 1) + 1,
-                        Math.random() * (20 - 1) + 1,
-                        Math.random() * (20 - 1) + 1,
-                        Math.random() * (20 - 1) + 1,
+                    data: new Array(6).fill(6).map(e => {
+                        console.log();
+                        return Math.round(Math.random() * (20 - 1) + 1);
+                    }),
+                    backgroundColor: [
+                        '#8332ac',
+                        '#08b2e3',
+                        '#fcb07e',
+                        '#1c7293',
+                        '#53C986',
+                        '#f45b69',
                     ],
-                    borderWidth: 1,
+
+                    // hoverBorderColor: [
+                    //     '#8332ac',
+                    //     '#08b2e3',
+                    //     '#fcb07e',
+                    //     '#1c7293',
+                    //     '#53C986',
+                    //     '#f45b69',
+                    // ],
+                    // hoverBackgroundColor: [
+                    //     '#8332ac',
+                    //     '#08b2e3',
+                    //     '#fcb07e',
+                    //     '#1c7293',
+                    //     '#53C986',
+                    //     '#f45b69',
+                    // ],
+                    // hoverBorderWidth: 2,
+                    borderWidth: 2,
                 },
             ],
         },
         options: {
-            // scales: {
-            //     y: {
-            //         beginAtZero: true,
-            //     },
-            // },
             plugins: {
-                title: {
-                    display: true,
-                    text: 'За кого ще гласувате?',
-                },
                 legend: {
-                    position: 'bottom',
+                    display: false,
+                    onClick: () => {},
                 },
             },
             // responsive: true,

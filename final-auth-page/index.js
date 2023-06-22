@@ -15,3 +15,17 @@ const sign_in_form = document.querySelector('form#sign-in-form');
 
 sign_up_form.addEventListener('click', e => console.log('sign up'));
 sign_in_form.addEventListener('click', e => console.log('sign in'));
+
+// -------------------------------------------------------->
+const showPassButtonArr = document.querySelectorAll('.input-field > i.fa-eye');
+
+showPassButtonArr.forEach(showPassBtn => {
+    showPassBtn.addEventListener('click', () => {
+        const currentState =
+            showPassBtn.previousElementSibling.getAttribute('type');
+        showPassBtn.previousElementSibling.setAttribute(
+            'type',
+            currentState === 'password' ? 'text' : 'password'
+        );
+    });
+});

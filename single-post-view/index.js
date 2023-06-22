@@ -60,3 +60,33 @@ dislikeBtn.addEventListener('click', () => {
         likeBtn.classList.remove('clicked');
     }
 });
+
+// ---------------------------------------------------------->
+
+const textarea = document.querySelector('div[contenteditable]');
+const button = document.querySelector('div[contenteditable] + button');
+const comments = document.querySelector('section#comments');
+
+button.addEventListener('click', () => {
+    const h1 = document.createElement('h1');
+    h1.textContent = textarea.textContent;
+    textarea.textContent = '';
+
+    comments.prepend(h1);
+});
+
+// ---------------------------------------------------------->
+
+const picker = document.querySelector('section#emojis > i');
+const hidden = document.querySelector('section.hidden');
+
+picker.addEventListener('click', () => {
+    hidden.classList.toggle('show');
+});
+
+Array.from(hidden.children).forEach(span => {
+    span.addEventListener('click', () => {
+        textarea.textContent += span.textContent;
+        hidden.classList.remove('show');
+    });
+});

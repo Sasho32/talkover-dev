@@ -641,9 +641,13 @@ div[contenteditable] {
     border-radius: 10px;
     min-height: 100px;
     max-height: 300px;
-    width: 100%;
-    overflow-x: none;
+    /* width: clamp(200px, 100%, 500px); */
+    word-break: break-word;
+    /* za tva kyde razshiryavashe konteinera horizontalno; */
+    padding: 0.5rem;
+    /* overflow: hidden; */
     overflow-y: auto;
+    /* overflow-y: auto; */
     outline: none;
     background-color: hsl(0, 0%, 95%);
 
@@ -863,4 +867,77 @@ section#content > div.stats {
         > div.comment {
         width: 100%;
     }
+}
+
+/* ------------------------------------------------------ */
+section#emojis {
+    /* background-color: hsl(0, 0%, 50%); */
+    /* padding: 0.5rem 1rem; */
+    padding-left: 0.5rem;
+    /* overflow-x: scroll; */
+    /* overflow-y: hidden; */
+    position: relative;
+    /* display: inline; */
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+section#emojis > i:hover {
+    cursor: pointer;
+}
+
+section.hidden {
+    position: absolute;
+    z-index: 5;
+    /* inache profilnite na komentiralite sa otgore */
+    top: 0;
+    left: 2rem;
+    /* right: 0%; */
+    width: clamp(200px, 50%, 500px);
+    height: 8rem;
+    /* height: auto; */
+    /* padding: 1rem; */
+    overflow-y: scroll;
+    /* transform: translateY(-100%); */
+    /* display: flex; */
+    /* align-items: center; */
+    /* overflow-x: scroll; */
+    /* overflow-y: hidden; */
+    /* display: inline-block;
+    margin-left: 1rem;
+    background-color: hsl(0, 0%, 50%);
+    width: 0;
+    display: none;
+    grid-template-columns: repeat(16, 1fr); */
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+}
+
+section.hidden::-webkit-scrollbar {
+    width: 5px;
+}
+section.hidden::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+section.hidden::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+section.hidden::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+section.hidden.show {
+    display: block;
+}
+section.hidden > span {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+section.hidden > span:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 80%);
 }

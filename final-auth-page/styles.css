@@ -288,6 +288,14 @@ main.sign-up-mode .forms-container {
     width: 100%;
 }
 
+.input-field > i.fa-eye {
+    position: absolute;
+    /* font-size: 1rem; */
+    right: 3%;
+    /* z-index: 3; */
+    /* color: red; */
+}
+
 .btn {
     width: 150px;
     background-color: #5995fd;
